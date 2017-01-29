@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!--TextView
+        android:id="@+id/display_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text Here"
+        android:gravity="center" /-->
+
+    <com.skeptek.fundisplayapp.AutoResizeTextView
+        android:id="@+id/display_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Auto Resized Text, max 1 line"
+        android:textSize="100sp"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
